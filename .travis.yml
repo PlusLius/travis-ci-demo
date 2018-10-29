@@ -1,22 +1,8 @@
 language: node_js
 node_js:
-  - "node"
-before_install:
-  - echo 'befpre install' 
+  - "4.1"
 install:
-  - echo 'install' 
-before_script:
-  - echo 'before_script' 
+  - "npm install"
 script:
-  - echo 'script' 
-after_success:
-  - echo 'after_success' 
-after_failure:
-  - echo 'after_failure' 
-before_depl y:
-  - echo 'before_deploy' 
-deplpy:
-  - echo 'deploy' 
-after_depl y:
-  - echo 'after_deplpy' 
+  - "npm test"
 
