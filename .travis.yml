@@ -1,3 +1,22 @@
 language: node_js
 node_js:
   - "node"
+before_install:
+  - console.log('before install')
+install:
+  - console.log('install')
+before_script:
+  - console.log('before_script')
+script:
+  - console.log('script')
+after_success:
+  - console.log('after_success')
+after_failure:
+  - console.log('after_failure')
+before_deploy:
+  - console.log('before_deploy')
+deplpy:
+  - console.log('deploy')
+after_deploy:
+  - console.log('after_deplpy')
+
