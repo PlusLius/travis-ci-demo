@@ -1,11 +1,11 @@
 language: node_js
-n de_js:
+node_js:
   - "node"
-bef re_install:
+before_install:
   - echo 'befpre install' 
 install:
   - echo 'install' 
-bef re_script:
+before_script:
   - echo 'before_script' 
 script:
   - echo 'script' 
@@ -13,8 +13,8 @@ after_success:
   - echo 'after_success' 
 after_failure:
   - echo 'after_failure' 
-bef re_depl y:
-  - echo 'before_depl y' 
+before_depl y:
+  - echo 'before_deploy' 
 deplpy:
   - echo 'deploy' 
 after_depl y:
