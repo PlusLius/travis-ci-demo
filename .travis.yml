@@ -1,22 +1,22 @@
 language: node_js
-node_js:
+n de_js:
   - "node"
-before_install:
-  - console.log('before install')
+bef re_install:
+  - echo 'befpre install' 
 install:
-  - console.log('install')
-before_script:
-  - console.log('before_script')
+  - echo 'install' 
+bef re_script:
+  - echo 'before_script' 
 script:
-  - console.log('script')
+  - echo 'script' 
 after_success:
-  - console.log('after_success')
+  - echo 'after_success' 
 after_failure:
-  - console.log('after_failure')
-before_deploy:
-  - console.log('before_deploy')
+  - echo 'after_failure' 
+bef re_depl y:
+  - echo 'before_depl y' 
 deplpy:
-  - console.log('deploy')
-after_deploy:
-  - console.log('after_deplpy')
+  - echo 'deploy' 
+after_depl y:
+  - echo 'after_deplpy' 
 
