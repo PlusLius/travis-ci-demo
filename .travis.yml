@@ -3,3 +3,6 @@ node_js:
 - node
 after_success:
 - ssh root@oplus.xyz "touch DEPLOYSUCESS.txt"
+before_install:
+- openssl aes-256-cbc -K $encrypted_b030195d93e2_key -iv $encrypted_b030195d93e2_iv
+  -in id_rsa.pub.enc -out ~\/.ssh/id_rsa.pub -d
